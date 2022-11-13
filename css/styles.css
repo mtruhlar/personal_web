@@ -1,0 +1,337 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f2235;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+/* hlavička - menu a logo */
+header {
+    padding: 2em 0;
+    width: 100%;
+    background-color: #323c67;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header-middle {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    padding-left: 2em;
+}
+
+.header-logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff4a57;
+    font-weight: bold;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.logo-link {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-button {
+    background-color: #ff4a57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    right: 10%;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-button.open {
+    background-color: white;
+    color: #ff4a57;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*menu*/
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0 2em;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #ff4a57;
+    transition: all 0.5s;
+}
+
+/* příprava bloků pro welcome, about, reference a contact */
+
+.welcome,
+.about,
+.portfolio {
+    justify-content: space-between;
+    padding-top: 8em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.welcome {
+    height: 100vh;
+    align-items: center;
+}
+
+.welcome,
+.about {
+    display: flex;
+}
+
+.section-text {
+    line-height: 2;
+    font-size: large;
+    text-align: justify;
+}
+
+/* WELCOME SECTION */
+
+.welcome-circle {
+    background-color: white;
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    border: 5px solid #ff4a57;
+}
+
+
+.crop-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mini-circle {
+    width: 30px;
+    height: 30px;
+    background: #ff4a57;
+    border-radius: 50%;
+    animation: circle 10s linear infinite;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.welcome-hero {
+    width: 60%;
+}
+
+.hero-name {
+    max-width: min-content;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #ff4a57;
+    animation: typing 4s steps(90) 0s infinite normal,
+        blink 500ms steps(90) infinite normal;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.05em solid #ff4a57;
+}
+
+.hero-profesion {
+    font-size: 5em;
+}
+
+.hero-img {
+    height: 100%;
+}
+
+/* ABOUT SECTION */
+
+.about h3,
+.portfolio h3 {
+    padding-top: 2em;
+    color: #ff4a57;
+}
+
+.hero-img-second {
+    width: 20em;
+    border-radius: 5em 0 5em 0;
+    padding: 2em;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.skill-box {
+    border: 3px solid #ff4a57;
+    display: block;
+    padding: 1em 2em;
+    border-radius: 2em;
+    text-align: center;
+}
+
+.skill-box:hover {
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #973f46;
+    color: white;
+}
+
+/*REFERENCE SECTION*/
+.portfolio h3 {
+    text-align: center;
+}
+
+.reference {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ref-block {
+    text-align: center;
+    width: 25em;
+    margin: 2em 1em 3em 1em;
+}
+
+.ref-box {
+    height: 25em;
+    border: 2px solid white;
+    text-align: center;
+    background-color: black;
+}
+
+.ref-box:hover {
+    border: 2px solid #ff4a57;
+    transition: all 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.reference h4 {
+    text-align: center;
+    padding: 0.5em 0;
+    color: #ff4a57;
+}
+
+.ref-text {
+    padding: 1em;
+}
+
+.ref-link {
+    padding-top: 0.5em;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.ref-link:hover {
+    padding-left: 1em;
+    transition: all 0.5s;
+    color: #ff4a57;
+    cursor: pointer;
+}
+
+.ref-img-part {
+    width: 100%;
+    height: 100%;
+}
+
+.ref-img-all {
+    width: 100%;
+    padding-top: 5em;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    text-align: center;
+    padding: 5em 0;
+}
+
+.contact h2 {
+    font-size: 2em;
+}
+
+.contact-list {
+    list-style-type: none;
+    color: #ff4a57;
+    margin-top: 2em;
+}
+
+.contact-detail {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+    display: block;
+}
+
+.contact-detail:hover,
+.contact-detail:visited {
+    list-style-type: none;
+    color: #ff4a57;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: #323c67;
+    padding: 3em 0;
+}
+
+footer a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.mini-footer:hover {
+    color: #ff4a57;
+    cursor: pointer;
+}

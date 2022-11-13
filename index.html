@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <link rel="stylesheet" href="css/animations.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/lightbox.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+  <title>Martin Truhlář</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-middle">
+      <a href="#home" class="logo-link">
+        <div class="header-left">
+          <div class="header-logo">mt</div>ruhlar
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Domů</a></li>
+          <li><a class="nav-link" href="#about">O mně</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="menu-button">MENU</button>
+    </div>
+  </header>
+  <div class="container">
+    <section class="welcome" id="home">
+      <div class="welcome-hero">
+        <h1 class="hero-name">Martin Truhlář</h1>
+        <h2 class="hero-profesion">Web Application Developer</h2>
+      </div>
+      <div class="welcome-circle">
+        <div class="mini-circle"></div>
+        <div class="crop-img"><img src="images/martin.png" class="hero-img" alt="me"></div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="hero-about">
+        <h2>O MNĚ</h2>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, voluptas! Consequatur tenetur cupiditate
+          explicabo vel alias pariatur nisi quia nemo quis impedit. Ad, cumque! Nulla neque ea qui quia quaerat!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus tenetur vitae nisi. Laborum deserunt alias ea
+          a
+          ut inventore quas doloremque ratione debitis in placeat dolorum, perspiciatis enim eos sint.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit eaque laborum molestiae quaerat
+          praesentium dolor veritatis ipsum corrupti quae odit mollitia perspiciatis assumenda, odio sequi animi
+          deserunt
+          ullam dolorum.
+        </p>
+        <h3>Dovednosti</h3>
+        <p class="section-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores veritatis unde vel
+          quis
+          natus similique eaque, consequatur nobis repellendus? Harum error rerum molestiae quod perspiciatis quam quia
+          suscipit eligendi qui?</p>
+        <div class="skills">
+          <div class="skill-box">HTML5</div>
+          <div class="skill-box">CSS3</div>
+          <div class="skill-box">Responzivní webdesign</div>
+          <div class="skill-box">Python</div>
+          <div class="skill-box">Základy OOP Python</div>
+          <div class="skill-box">Flask framework</div>
+          <div class="skill-box">SQLAlchemy</div>
+          <div class="skill-box">GitHub</div>
+          <div class="skill-box">PyQt</div>
+          <div class="skill-box">Visual Studio Code</div>
+        </div>
+      </div>
+      <img src="images/martin_second.jpg" class="hero-img-second" alt="me">
+    </section>
+    <section class="portfolio" id="portfolio">
+      <h2>PORTFOLIO</h2>
+      <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat porro natus veniam!
+        Voluptatibus, sit beatae quis adipisci cumque laboriosam magnam at ipsa nisi, quaerat libero. Impedit autem
+        suscipit recusandae rerum?</p>
+      <h3>Ukázky projektů</h3>
+      <div class="reference">
+        <div class="ref-block">
+          <a href="images/final_project.png" data-lightbox="image-1" data-title="final_project">
+            <div class="ref-box"><img src="images/final_project.png" class="ref-img-part" alt="final_project"></div>
+          </a>
+          <div class="ref-text">
+            <h4>Evidence pojištěných</h4>Samostatně vypracovaná konzolová aplikace s ošetřením chyb. Závěrečný projekt pro
+            itnetwork.cz.<a href="https://github.com/mtruhlar/evidence_pojisteni" target="_blank" class="ref-link">→ GitHub evidence</a>
+          </div>
+        </div>
+        <div class="ref-block">
+          <a href="images/database_edit.png" data-lightbox="image-1" data-title="database_project">
+            <div class="ref-box"><img src="images/database_edit.png" class="ref-img-all" alt="database_project"></div>
+          </a>
+          <div class="ref-text">
+            <h4>Databazáze uživatelů</h4>Vlastní jednoduchá webová aplikace pro správu uživatelů s použitím SQLAlchemy a
+            frameworku Flask.<a href="https://github.com/mtruhlar/user_database" target="_blank" class="ref-link">→ GitHub databáze</a>
+          </div>
+        </div>
+        <div class="ref-block">
+          <a href="images/personal_web.png" data-lightbox="image-1" data-title="personal_web">
+            <div class="ref-box"><img src="images/personal_web.png" class="ref-img-all" alt="personal_web"></div>
+          </a>
+          <div class="ref-text">
+            <h4>Osobní web</h4>Vlastní návrh osobního webu s portfoliem.
+            <a href="https://github.com/mtruhlar/personal_web" target="_blank" class="ref-link">→ GitHub osobní web</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-box">
+        <h2>KONTAKT</h2>
+        <ul class="contact-list">
+          <h2>Martin Truhlář</h2>
+          <a class="contact-detail" href="mailto:truhlarmartin@seznam.cz">truhlarmartin@seznam.cz</a>
+          <a class="contact-detail" href="tel:+420777309642">+420 777 309 642</a>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <a class="mini-footer" href="#home" alt="me">Martin Truhlar 2022</a>
+  </footer>
+  <script src="js/scroll.js"></script>
+  <script src="js/lightbox-plus-jquery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+/*animace*/
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from{border-color: #ff4a57;}
+    to{border-color: transparent;}
+  }
+  
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-12.3em)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-12.3em)
+                rotate(-360deg);
+    }
+  }
+  
+  @keyframes circle_respo {
+    0%{
+      transform:rotate(0deg)
+                translate(-7.3em)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-7.3em)
+                rotate(-360deg);
+    }
+  }
+  
+  @keyframes circle_respo_2 {
+      0%{
+        transform:rotate(0deg)
+                  translate(-5em)
+                  rotate(0deg);
+      
+      }
+      100%{
+        transform:rotate(360deg)
+                  translate(-5em)
+                  rotate(-360deg);
+      }
+  }

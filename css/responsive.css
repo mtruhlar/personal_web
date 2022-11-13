@@ -1,0 +1,171 @@
+/*respo pro jednotlive bloky blok*/
+
+@media screen and (max-width: 1200px) {
+    .welcome {
+        justify-content: center;
+    }
+
+    .welcome-hero {
+        padding: 2em;
+    }
+
+    .hero-name {
+        font-size: 2em;
+    }
+
+    .welcome-circle {
+        width: 15em;
+        height: 15em;
+    }
+
+    .hero-profesion {
+        font-size: 3em;
+    }
+
+    .mini-circle {
+        animation: circle_respo 10s linear infinite;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .hero-img-second {
+        margin: 0 auto;
+    }
+
+    .skills {
+        justify-content: center;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 1em 0;
+    }
+
+    .welcome {
+        flex-direction: column-reverse;
+    }
+
+    .welcome-hero {
+        padding: 2em 0;
+    }
+
+    .welcome-circle {
+        width: 10em;
+        height: 10em;
+        border: 2px solid #ff4a57;
+    }
+
+    .mini-circle {
+        animation: circle_respo_2 10s linear infinite;
+        width: 20px;
+        height: 20px;
+    }
+
+    .hero-name {
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+
+    .hero-profesion {
+        padding-top: 1em;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        background: #ff4a57;
+        padding: 2em;
+        text-align: center;
+    }
+
+    .nav-list.open {
+        display: block;
+    }
+
+    .nav-list.toggle {
+        display: block;
+    }
+
+    .nav-link {
+        padding: 0.5em 0;
+    }
+
+    .nav-link:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .section-text {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .welcome-circle {
+        width: 10em;
+        height: 10em;
+        border: 2px solid #ff4a57;
+    }
+
+
+
+    .mini-circle {
+        animation: circle_respo_2 10s linear infinite;
+        width: 20px;
+        height: 20px;
+    }
+
+    .hero-name {
+        font-size: 1em;
+    }
+
+    .hero-profesion {
+        padding-top: 1em;
+        font-size: 1.5em;
+    }
+
+    .section-text {
+        font-size: 1em;
+    }
+
+    .hero-img-second {
+        width: 70%;
+    }
+
+    .skill-box {
+        padding: 0.5em 1em;
+        font-size: small;
+    }
+
+    .ref-block {
+        width: 18em;
+    }
+
+    .ref-box {
+        height: 18em;
+    }
+
+    .contact-detail {
+        font-size: 1.3em;
+    }
+}
