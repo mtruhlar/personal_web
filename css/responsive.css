@@ -129,8 +129,6 @@
         border: 2px solid #ff4a57;
     }
 
-
-
     .mini-circle {
         animation: circle_respo_2 10s linear infinite;
         width: 20px;
@@ -151,7 +149,7 @@
     }
 
     .hero-img-second {
-        width: 70%;
+        width: 15em;
     }
 
     .skill-box {
