@@ -310,8 +310,7 @@ header {
     display: block;
 }
 
-.contact-detail:hover,
-.contact-detail:visited {
+.contact-detail:hover {
     list-style-type: none;
     color: #ff4a57;
 }
